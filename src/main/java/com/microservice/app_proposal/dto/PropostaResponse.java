@@ -13,9 +13,10 @@ public class PropostaResponse {
     private String nome;
     private String sobrenome;
     private String cpf;
+    private String telefone;
     private Double renda;
-    private Double valorSolicitado;
-    private int prazoPagament;
-    private Boolean aprovado;
+    private String valorSolicitadoFmt;
+    private int prazoPagamento;
+    private Boolean aprovada;
     private String observacao;
 }
