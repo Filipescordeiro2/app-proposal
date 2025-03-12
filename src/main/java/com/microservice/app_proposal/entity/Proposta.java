@@ -1,5 +1,6 @@
 package com.microservice.app_proposal.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import lombok.AllArgsConstructor;
@@ -25,5 +26,6 @@ public class Proposta {
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_usuario")
+    @JsonManagedReference
     private Usuario usuario;
 }

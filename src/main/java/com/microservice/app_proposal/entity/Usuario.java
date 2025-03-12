@@ -1,5 +1,6 @@
 package com.microservice.app_proposal.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,5 +24,6 @@ public class Usuario {
     private Double renda;
 
     @OneToOne(mappedBy = "usuario")
+    @JsonBackReference
     private Proposta proposta;
 }
